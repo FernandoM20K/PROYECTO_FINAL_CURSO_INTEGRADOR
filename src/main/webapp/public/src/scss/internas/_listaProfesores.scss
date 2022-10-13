@@ -1,0 +1,16 @@
+.cont-registro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-crear {
+    margin-top: 2vh;
+    padding: 1vh 3vw;
+    color: $oro;
+    text-transform: uppercase;
+    border: .2rem solid $oro;
+}
+
+.ml-2 {
+    margin-left: 1vw;
+}
