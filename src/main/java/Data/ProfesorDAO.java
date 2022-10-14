@@ -12,7 +12,7 @@ public class ProfesorDAO {
 
     private static final String SQL_INSERT = "INSERT INTO TB_PROFESORES(NOMBRES, APELLIDOS, DNI, EDAD, GENERO, CELULAR, DIRECCION, EMAIL, SUELDO, IMAGEN_PERFIL, ESTADO) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
 
-    private static final String SQL_UPDATE = "UPDATE TB_PROFESORES SET NOMBRES=?, APELLIDOS=?, DNI=?, EDAD=?, GENERO=?, CELULAR=?, DIRECCION=?, EMAIL=?, SUELDO=?, IMAGEN_PERFIL=?, ESTADO=? WHERE ID_PROFESOR = ?";
+    private static final String SQL_UPDATE = "UPDATE TB_PROFESORES SET NOMBRES=?, APELLIDOS=?, DNI=?, EDAD=?, GENERO=?, CELULAR=?, DIRECCION=?, EMAIL=?, SUELDO=?, IMAGEN_PERFIL=? WHERE ID_PROFESOR = ?";
 
     private static final String SQL_AÑADIR_USER = "UPDATE TB_PROFESORES SET ID_USUARIO=? WHERE ID_PROFESOR = ?";
 
@@ -159,8 +159,7 @@ public class ProfesorDAO {
             stmt.setString(8, profesor.getEmail());
             stmt.setDouble(9, profesor.getSueldo());
             stmt.setString(10, profesor.getImagenPerfil());
-            stmt.setString(11, profesor.getEstado());
-            stmt.setInt(12, profesor.getIdProfesor());
+            stmt.setInt(11, profesor.getIdProfesor());
 
 
             rows = stmt.executeUpdate();

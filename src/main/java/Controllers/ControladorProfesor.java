@@ -40,7 +40,7 @@ public class ControladorProfesor extends HttpServlet{
                     this.insertarProfesor(request, response);
                     break;
                 case "modificar":
-                    this.modificarUsuario(request, response);
+                    this.modificarProfesor(request, response);
                     break;
                 default: 
                     this.accionDefault(request, response);
@@ -107,7 +107,7 @@ public class ControladorProfesor extends HttpServlet{
         this.accionDefault(request, response);
     }
 
-    private void modificarUsuario(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, java.io.IOException {
+    private void modificarProfesor(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, java.io.IOException {
         //RECUPERAMOS LOS VALORES DEL FORMULARIO AGREGARPROFESOR
         int idProfesor = Integer.parseInt(request.getParameter("idProfesor"));
         String nombres = request.getParameter("nombres");
