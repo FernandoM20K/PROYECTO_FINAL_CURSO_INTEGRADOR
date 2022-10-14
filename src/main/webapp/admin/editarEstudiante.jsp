@@ -43,10 +43,18 @@
 
                     <div>
                         <label for="genero">Genero</label>
-                        <select id="genero" name="genero" class="block-100" required value="${estudiante.genero}">
-                            <option selected value=""></option>
-                            <option value="M">Masculino</option>
-                            <option value="F">Femenino</option>
+                        <select id="genero" name="genero" class="block-100" required>
+                            <c:set var="genero" value="${estudiante.genero}"/>
+                            <c:choose>
+                                <c:when test="${genero == 'M'}">
+                                    <option value="M" selected>Masculino</option>
+                                    <option value="F">Femenino</option>
+                                </c:when>
+                                <c:when test="${genero == 'F'}">
+                                    <option value="M">Masculino</option>
+                                    <option value="F" selected>Femenino</option>
+                                </c:when>
+                            </c:choose>
                         </select>
                     </div>
 

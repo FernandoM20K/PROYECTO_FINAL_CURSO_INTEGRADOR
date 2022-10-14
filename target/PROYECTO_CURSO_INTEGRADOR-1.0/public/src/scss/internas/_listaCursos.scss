@@ -49,3 +49,16 @@
         height: max-content;
     }
 }
+
+.vistaCurso {
+    display: flex;
+    gap: 3%;
+    background-color: $negro;
+    border-radius: .5rem;
+}
+
+.datosCurso {
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+}

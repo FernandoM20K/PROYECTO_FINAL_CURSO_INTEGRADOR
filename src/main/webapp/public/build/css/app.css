@@ -1387,6 +1387,19 @@ table tbody .boton-celeste-radio-inline, table tbody .boton-verde-radio-inline, 
   }
 }
 
+.vistaCurso {
+  display: flex;
+  gap: 3%;
+  background-color: #000000;
+  border-radius: 0.5rem;
+}
+
+.datosCurso {
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .header-1 {
   background-color: #1e1d1d;
   width: 100%;

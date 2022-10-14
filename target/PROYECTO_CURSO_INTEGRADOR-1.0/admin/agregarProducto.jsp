@@ -15,7 +15,7 @@
         </div>
 
         <div class="tabla">
-            <form action="${pageContext.request.contextPath}/ControladorProducto?accion=insertar" method="post">
+            <form action="${pageContext.request.contextPath}/ControladorProducto?accion=insertar" method="post" enctype="multipart/form-data">
                 <div>
                     <label for="descripcion">Descripcion</label>
                     <input type="text" id="descripcion" name="descripcion" class="block-100" required>
